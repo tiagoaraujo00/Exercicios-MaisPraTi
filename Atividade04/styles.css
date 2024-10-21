@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  flex-grow: 1;
+  margin: 0 20px; /* Espaçamento entre a nav e os outros elementos */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Alinha os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens */
+}
+
+.nav-list li {
+  margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #ff9900; /* Cor ao passar o mouse */
+}
+
+.cta-button {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e68a00; /* Cor ao passar o mouse */
+}
+
+.banner {
+  position: relative;
+  height: 400px; /* Altura do banner */
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cobre toda a área do slide */
+}
+
+/* Estilos para as setas */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Cor das setas */
+  width: 40px; /* Largura das setas */
+  height: 40px; /* Altura das setas */
+}
+
+.swiper-button-next {
+  right: 10px; /* Distância da borda direita */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Distância da borda esquerda */
+}
+
+/* Estilo para a paginação */
+.swiper-pagination {
+  bottom: 10px; /* Distância do fundo */
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#sobre {
+  background-color: #f8f8f8;
+}
+
+#servicos {
+  background-color: #fff;
+}
+
+#testemunhos {
+  background-color: #f1f1f1;
+}
+
+#contato {
+  background-color: #fff;
+}
+
+#servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.servico-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.servico-card:hover {
+  transform: scale(1.05);
+}
+
+#contato input,
+#contato textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
